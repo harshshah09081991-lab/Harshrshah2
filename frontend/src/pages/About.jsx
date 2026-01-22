@@ -48,11 +48,13 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-[3rem] opacity-20 blur-2xl"></div>
                 <div className="relative glass-card rounded-[3rem] p-2 backdrop-blur-2xl overflow-hidden">
-                  <img 
-                    src={businessInfo.profileImage} 
-                    alt={businessInfo.founderName}
-                    className="w-full h-auto object-cover rounded-[2.5rem]"
-                  />
+                  <div className="rounded-[2.5rem] overflow-hidden profile-image-container">
+                    <img 
+                      src={businessInfo.profileImage} 
+                      alt={businessInfo.founderName}
+                      className="w-full h-auto object-cover profile-image-zoom"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

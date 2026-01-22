@@ -78,11 +78,11 @@ const Home = () => {
                 
                 {/* Photo Container - Clean without overlay */}
                 <div className="relative glass-card rounded-[3rem] p-2 backdrop-blur-2xl mb-6">
-                  <div className="relative rounded-[2.5rem] overflow-hidden">
+                  <div className="relative rounded-[2.5rem] overflow-hidden profile-image-container">
                     <img 
                       src={businessInfo.profileImage} 
                       alt={businessInfo.founderName}
-                      className="w-full h-auto object-cover"
+                      className="w-full h-auto object-cover profile-image-zoom"
                     />
                   </div>
                 </div>

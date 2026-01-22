@@ -1,5 +1,5 @@
 export const businessInfo = {
-  name: "Harsh R Shah and Associates",
+  name: "Harsh R Shah & Associates",
   tagline: "Expert Tax & Compliance Solutions for Growing Businesses",
   phone: "+91-9510960227",
   email: "contact@harshshah.ca",
@@ -9,10 +9,10 @@ export const businessInfo = {
   officeHours: "Monday - Saturday: 10:00 AM - 6:00 PM",
   googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9!2d72.5!3d23.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAyJzAwLjAiTiA3MsKwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890",
   profileImage: "/harsh-shah-profile.png",
-  founderName: "CA Harsh R Shah",
+  founderName: "Harsh R Shah",
   qualification: "Chartered Accountant",
   detailedBio: {
-    intro: "CA Harsh R Shah is a distinguished Chartered Accountant with over 12 years of proven expertise in taxation, audit, and comprehensive business advisory services. With a deep-rooted commitment to excellence and client success, Harsh has established himself as a trusted advisor for individuals, startups, and established enterprises across India.",
+    intro: "Harsh R Shah is a distinguished Chartered Accountant with over 12 years of proven expertise in taxation, audit, and comprehensive business advisory services. With a deep-rooted commitment to excellence and client success, Harsh has established himself as a trusted advisor for individuals, startups, and established enterprises across India.",
     expertise: "Specializing in complex GST compliance, income tax planning, statutory audits, and business structuring, Harsh brings a unique blend of technical mastery and practical business acumen to every engagement. His approach goes beyond mere compliance – he partners with clients to optimize tax positions, streamline financial operations, and drive sustainable business growth.",
     approach: "What sets Harsh apart is his client-centric philosophy and forward-thinking methodology. He believes in proactive compliance management, where potential issues are identified and resolved before they become problems. His clear communication style demystifies complex tax regulations, empowering clients to make informed financial decisions with confidence.",
     vision: "Throughout his career, Harsh has successfully navigated clients through challenging tax scenarios, represented businesses before regulatory authorities, and helped numerous startups establish robust compliance frameworks from day one. His dedication to staying ahead of regulatory changes and leveraging technology for efficient service delivery ensures clients receive cutting-edge solutions.",

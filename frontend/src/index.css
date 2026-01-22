@@ -97,6 +97,16 @@ code {
     transform: translateY(-8px) rotateX(2deg) rotateY(2deg);
 }
 
+/* Profile Image Zoom - Hide Gemini Logo */
+.profile-image-zoom {
+    transform: scale(1.15);
+    transform-origin: center center;
+}
+
+.profile-image-container {
+    overflow: hidden;
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;

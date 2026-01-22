@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
             <div className="bg-white p-8 rounded-2xl shadow-sm">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Deep Industry Knowledge</h3>
               <p className="text-slate-700 leading-relaxed mb-4">
-                With over {businessInfo.experience} years of hands-on experience as a Chartered Accountant, we bring deep expertise in handling complex tax matters, GST compliance, and business advisory across diverse industries. Our ICAI certification (Member No. {businessInfo.icaiNumber}) ensures you're working with a qualified professional who stays updated with the latest regulatory changes.
+                With over {businessInfo.experience} years of hands-on experience as a Chartered Accountant, we bring deep expertise in handling complex tax matters, GST compliance, and business advisory across diverse industries. We are a certified professional who stays updated with the latest regulatory changes.
               </p>
               <p className="text-slate-700 leading-relaxed">
                 We've successfully served clients ranging from individual taxpayers to startups and established businesses, understanding the unique challenges each segment faces in maintaining compliance and optimizing tax positions.

@@ -58,9 +58,16 @@ export const services = [
   },
   {
     id: 6,
+    title: "USA Bookkeeping Services",
+    description: "Professional bookkeeping and financial review services for US-based businesses with hands-on QuickBooks expertise.",
+    icon: "TrendingUp",
+    features: ["QuickBooks Setup & Management", "Monthly Bookkeeping", "Financial Review & Reconciliation", "US Tax Compliance Support"]
+  },
+  {
+    id: 7,
     title: "Advisory & Consulting",
     description: "Strategic business advisory, financial planning, and compliance consulting for sustainable growth.",
-    icon: "TrendingUp",
+    icon: "Lightbulb",
     features: ["Business Advisory", "Financial Planning", "Compliance Review", "CFO Services"]
   }
 ];

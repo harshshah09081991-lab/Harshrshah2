@@ -6,8 +6,8 @@ import { Card, CardContent } from '../components/ui/card';
 import { businessInfo, services, whyChooseUs, testimonials } from '../mockData';
 
 const iconMap = {
-  FileText, Calculator, ClipboardCheck, Building2, Scale, TrendingUp,
-  Award, Clock, DollarSign, Users, Lightbulb, Shield
+  FileText, Calculator, ClipboardCheck, Building2, Scale, TrendingUp, Lightbulb,
+  Award, Clock, DollarSign, Users, Shield
 };
 
 const Home = () => {

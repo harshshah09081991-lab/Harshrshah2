@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { services } from '../mockData';
 
 const iconMap = {
-  FileText, Calculator, ClipboardCheck, Building2, Scale, TrendingUp
+  FileText, Calculator, ClipboardCheck, Building2, Scale, TrendingUp, Lightbulb
 };
 
 const Services = () => {

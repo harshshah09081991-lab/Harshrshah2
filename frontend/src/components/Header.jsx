@@ -37,8 +37,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex flex-col group">
-            <span className="text-xl font-black text-slate-900 group-hover:text-emerald-600 transition-colors">{businessInfo.name}</span>
-            <span className="text-xs text-emerald-600 font-bold tracking-wider">{businessInfo.experience}+ YEARS EXCELLENCE</span>
+            <span className="text-xl font-black text-slate-900 group-hover:text-indigo-600 transition-colors">{businessInfo.name}</span>
+            <span className="text-xs text-indigo-600 font-bold tracking-wider">{businessInfo.experience}+ YEARS EXCELLENCE</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,11 +48,11 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium transition-colors relative group ${
-                  isActive(link.path) ? 'text-emerald-600' : 'text-slate-700 hover:text-emerald-600'
+                  isActive(link.path) ? 'text-indigo-600' : 'text-slate-700 hover:text-indigo-600'
                 }`}
               >
                 {link.name}
-                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-600 transition-all duration-300 group-hover:w-full ${
+                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full ${
                   isActive(link.path) ? 'w-full' : ''
                 }`}></span>
               </Link>
@@ -62,7 +62,7 @@ const Header = () => {
           {/* Call Button */}
           <div className="hidden lg:flex items-center space-x-4">
             <a href={`tel:${businessInfo.phone}`}>
-              <Button className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 rounded-xl">
+              <Button className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white font-bold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 rounded-xl">
                 <Phone className="w-4 h-4 mr-2" />
                 Call Now
               </Button>
@@ -88,7 +88,7 @@ const Header = () => {
                   to={link.path}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`text-sm font-medium px-4 py-2 rounded-lg transition-colors ${
-                    isActive(link.path) ? 'bg-emerald-50 text-emerald-600' : 'text-slate-700 hover:bg-slate-50'
+                    isActive(link.path) ? 'bg-indigo-50 text-indigo-600' : 'text-slate-700 hover:bg-slate-50'
                   }`}
                 >
                   {link.name}
@@ -98,7 +98,7 @@ const Header = () => {
                 href={`tel:${businessInfo.phone}`}
                 className="mx-4 mt-2"
               >
-                <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
+                <Button className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white">
                   <Phone className="w-4 h-4 mr-2" />
                   Call Now
                 </Button>

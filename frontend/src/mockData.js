@@ -23,52 +23,52 @@ export const businessInfo = {
 export const services = [
   {
     id: 1,
-    title: "GST Services",
-    description: "Complete GST solutions including registration, monthly/quarterly returns, annual returns, and GST appeals & litigation.",
+    title: "GST Compliance & Advisory",
+    description: "End-to-end GST solutions for seamless compliance. Expert handling of registrations, returns, refunds, appeals, and litigation with proactive advisory to optimize input tax credits.",
     icon: "FileText",
-    features: ["GST Registration", "GST Returns Filing", "GST Appeals", "Input Tax Credit Advisory"]
+    features: ["GST Registration & Amendments", "Monthly/Quarterly/Annual Returns", "GST Refunds & Appeals", "Input Tax Credit Optimization", "GST Litigation Support", "E-way Bill & E-invoicing"]
   },
   {
     id: 2,
-    title: "Income Tax",
-    description: "Comprehensive income tax services for individuals, businesses, and professionals with expert litigation support.",
-    icon: "Calculator",
-    features: ["Tax Planning", "ITR Filing", "Tax Litigation", "TDS Compliance"]
+    title: "USA Bookkeeping & Accounting",
+    description: "Comprehensive bookkeeping services for US-based businesses. Expert QuickBooks management, financial reconciliation, and compliance support to keep your books accurate and up-to-date.",
+    icon: "TrendingUp",
+    features: ["QuickBooks Online/Desktop Setup", "Monthly Bookkeeping & Reconciliation", "Financial Statements & Reports", "Accounts Payable/Receivable Management", "Payroll Processing Support", "US Tax Compliance Assistance"]
   },
   {
     id: 3,
+    title: "Income Tax Services",
+    description: "Comprehensive income tax planning and filing services for individuals, businesses, and professionals with expert litigation support.",
+    icon: "Calculator",
+    features: ["Tax Planning & Optimization", "ITR Filing (All Forms)", "Tax Litigation & Representation", "TDS/TCS Compliance"]
+  },
+  {
+    id: 4,
     title: "Audit Services",
-    description: "Statutory, tax, and internal audits ensuring compliance and accurate financial reporting.",
+    description: "Statutory, tax, and internal audits ensuring compliance and accurate financial reporting with thorough examination.",
     icon: "ClipboardCheck",
     features: ["Statutory Audit", "Tax Audit", "Internal Audit", "Stock Audit"]
   },
   {
-    id: 4,
+    id: 5,
     title: "Business Registration",
-    description: "Complete assistance in business setup including company incorporation, LLP formation, and registrations.",
+    description: "Complete assistance in business setup including company incorporation, LLP formation, and all statutory registrations.",
     icon: "Building2",
     features: ["Company Incorporation", "LLP Registration", "Partnership Deed", "MSME Registration"]
   },
   {
-    id: 5,
-    title: "Notice & Appeals",
-    description: "Expert representation before tax authorities for notice replies, assessments, and appeals.",
-    icon: "Scale",
-    features: ["Notice Replies", "Assessment Representation", "Appeals Filing", "Legal Documentation"]
-  },
-  {
     id: 6,
-    title: "USA Bookkeeping Services",
-    description: "Professional bookkeeping and financial review services for US-based businesses with hands-on QuickBooks expertise.",
-    icon: "TrendingUp",
-    features: ["QuickBooks Setup & Management", "Monthly Bookkeeping", "Financial Review & Reconciliation", "US Tax Compliance Support"]
+    title: "Notice & Appeals",
+    description: "Expert representation before tax authorities for notice replies, assessments, and appeals with successful track record.",
+    icon: "Scale",
+    features: ["Income Tax Notices", "GST Notice Handling", "Assessment Representation", "Appeals Filing"]
   },
   {
     id: 7,
     title: "Advisory & Consulting",
-    description: "Strategic business advisory, financial planning, and compliance consulting for sustainable growth.",
+    description: "Strategic business advisory, financial planning, and compliance consulting for sustainable growth and success.",
     icon: "Lightbulb",
-    features: ["Business Advisory", "Financial Planning", "Compliance Review", "CFO Services"]
+    features: ["Business Advisory", "Financial Planning", "Compliance Review", "Virtual CFO Services"]
   }
 ];
 

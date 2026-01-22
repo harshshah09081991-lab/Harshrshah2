@@ -13,20 +13,20 @@ const iconMap = {
 const Home = () => {
   return (
     <div className="min-h-screen overflow-hidden">
-      {/* Futuristic Hero Section */}
-      <section className="relative pt-32 pb-24 px-4 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 overflow-hidden">
+      {/* Elegant Hero Section - Indigo & Gold */}
+      <section className="relative pt-32 pb-24 px-4 bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 overflow-hidden">
         {/* Animated Background Elements */}
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-emerald-500 rounded-full opacity-10 blur-3xl animate-float"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-500 rounded-full opacity-10 blur-3xl" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-emerald-400 rounded-full opacity-5 blur-3xl animate-float" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-indigo-500 rounded-full opacity-10 blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-500 rounded-full opacity-10 blur-3xl" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-violet-400 rounded-full opacity-5 blur-3xl animate-float" style={{animationDelay: '4s'}}></div>
         
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="text-white animate-slide-in-up">
-              <div className="inline-flex items-center space-x-2 glass px-5 py-2.5 rounded-full text-sm font-semibold mb-8 animate-glow">
-                <Sparkles className="w-4 h-4 text-emerald-400" />
-                <span className="text-emerald-300">{businessInfo.experience}+ Years of Excellence</span>
+              <div className="inline-flex items-center space-x-2 glass px-5 py-2.5 rounded-full text-sm font-semibold mb-8 animate-glow border border-indigo-400/30">
+                <Sparkles className="w-4 h-4 text-amber-400" />
+                <span className="text-indigo-300">{businessInfo.experience}+ Years of Excellence</span>
               </div>
               
               <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
@@ -41,13 +41,13 @@ const Home = () => {
               
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
                 <Link to="/contact">
-                  <Button size="lg" className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-10 h-14 text-lg font-bold rounded-2xl shadow-2xl shadow-emerald-500/50 hover:shadow-emerald-500/70 transition-all">
+                  <Button size="lg" className="bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-700 hover:to-violet-700 text-white px-10 h-14 text-lg font-bold rounded-2xl shadow-2xl shadow-indigo-500/50 hover:shadow-indigo-500/70 transition-all">
                     <Zap className="mr-2 w-5 h-5" />
                     Get Started
                   </Button>
                 </Link>
                 <a href={`tel:${businessInfo.phone}`}>
-                  <Button size="lg" className="glass hover:bg-white/20 text-white border-2 border-emerald-400/50 px-8 h-14 text-lg font-semibold rounded-2xl transition-all">
+                  <Button size="lg" className="glass hover:bg-white/20 text-white border-2 border-indigo-400/50 px-8 h-14 text-lg font-semibold rounded-2xl transition-all">
                     <Phone className="mr-2 w-5 h-5" />
                     {businessInfo.phone}
                   </Button>
@@ -56,28 +56,28 @@ const Home = () => {
               
               <div className="flex flex-wrap items-center gap-6 text-sm text-slate-400">
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                  <span>AI-Powered Insights</span>
+                  <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
+                  <span>Premium Service</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+                  <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
                   <span>100% Compliance</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                  <div className="w-2 h-2 bg-violet-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
                   <span>24/7 Support</span>
                 </div>
               </div>
             </div>
 
-            {/* Right - Profile Photo with Futuristic Frame */}
+            {/* Right - Profile Photo with Elegant Frame */}
             <div className="relative animate-slide-in-up" style={{animationDelay: '0.2s'}}>
               <div className="relative">
                 {/* Glow Effects */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-[3rem] opacity-20 blur-2xl animate-pulse"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-[3rem] opacity-20 blur-2xl animate-pulse"></div>
                 
                 {/* Photo Container - Clean without overlay */}
-                <div className="relative glass-card rounded-[3rem] p-2 backdrop-blur-2xl mb-6">
+                <div className="relative glass-card rounded-[3rem] p-2 backdrop-blur-2xl mb-6 border border-indigo-400/20">
                   <div className="relative rounded-[2.5rem] overflow-hidden profile-image-container">
                     <img 
                       src={businessInfo.profileImage} 
@@ -88,9 +88,9 @@ const Home = () => {
                 </div>
 
                 {/* Profile Info Badge - Below Photo */}
-                <div className="glass-card rounded-2xl p-6 backdrop-blur-xl border border-white/20 mb-6">
+                <div className="glass-card rounded-2xl p-6 backdrop-blur-xl border border-indigo-400/30 mb-6 bg-gradient-to-br from-indigo-900/20 to-violet-900/20">
                   <h3 className="text-2xl font-bold text-white mb-1">{businessInfo.founderName}</h3>
-                  <p className="text-emerald-300 font-semibold text-lg mb-2">{businessInfo.qualification}</p>
+                  <p className="text-amber-300 font-semibold text-lg mb-2">{businessInfo.qualification}</p>
                   <p className="text-slate-300 text-sm leading-relaxed">
                     {businessInfo.experience}+ years of transforming businesses through strategic tax advisory
                   </p>
@@ -98,9 +98,9 @@ const Home = () => {
 
                 {/* Stats Grid - Below Profile Info */}
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-white/20">
+                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-indigo-400/30 bg-gradient-to-br from-indigo-900/20 to-violet-900/20">
                     <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/50">
                         <Users className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -110,9 +110,9 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-white/20">
+                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-amber-400/30 bg-gradient-to-br from-amber-900/20 to-orange-900/20">
                     <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg shadow-amber-500/50">
                         <Award className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -131,13 +131,13 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
 
-      {/* Services Overview - Futuristic Cards */}
+      {/* Services Overview - Elegant Cards */}
       <section className="py-24 px-4 bg-gradient-to-b from-white via-slate-50 to-white relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-100 rounded-full opacity-30 blur-3xl"></div>
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-indigo-100 rounded-full opacity-30 blur-3xl"></div>
         
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-100 to-violet-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
               <Sparkles className="w-4 h-4" />
               <span>OUR SERVICES</span>
             </div>
@@ -153,26 +153,26 @@ const Home = () => {
             {services.map((service, index) => {
               const Icon = iconMap[service.icon];
               return (
-                <Card key={service.id} className="group border-0 bg-white hover:bg-gradient-to-br hover:from-emerald-50 hover:to-cyan-50 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl overflow-hidden card-3d">
+                <Card key={service.id} className="group border-0 bg-white hover:bg-gradient-to-br hover:from-indigo-50 hover:to-violet-50 shadow-xl hover:shadow-2xl transition-all duration-500 rounded-3xl overflow-hidden card-3d">
                   <CardContent className="p-8">
                     <div className="relative mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg shadow-emerald-500/50 group-hover:shadow-emerald-500/70 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/50 group-hover:shadow-indigo-500/70 group-hover:scale-110 transition-all duration-500">
                         <Icon className="w-8 h-8 text-white" />
                       </div>
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
+                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-amber-400 rounded-full opacity-0 group-hover:opacity-100 blur-xl transition-opacity"></div>
                     </div>
                     <h3 className="text-2xl font-bold text-slate-900 mb-3">{service.title}</h3>
                     <p className="text-slate-600 mb-6 leading-relaxed">{service.description}</p>
                     <ul className="space-y-2 mb-6">
                       {service.features.slice(0, 3).map((feature, idx) => (
                         <li key={idx} className="flex items-center text-sm text-slate-700">
-                          <CheckCircle2 className="w-4 h-4 text-emerald-600 mr-2 flex-shrink-0" />
+                          <CheckCircle2 className="w-4 h-4 text-indigo-600 mr-2 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
                     </ul>
                     <Link to="/services">
-                      <Button variant="ghost" className="text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 p-0 font-bold group/btn">
+                      <Button variant="ghost" className="text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 p-0 font-bold group/btn">
                         Explore <ArrowRight className="ml-1 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                       </Button>
                     </Link>
@@ -184,21 +184,21 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us - Modern Grid */}
-      <section className="py-24 px-4 bg-gradient-to-br from-slate-900 to-slate-950 relative overflow-hidden">
+      {/* Why Choose Us - Elegant Grid */}
+      <section className="py-24 px-4 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-950 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-5">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-emerald-500 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-500 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-indigo-500 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-amber-500 rounded-full blur-3xl"></div>
         </div>
         
         <div className="container mx-auto relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full text-sm font-bold mb-4">
-              <Award className="w-4 h-4 text-emerald-400" />
-              <span className="text-emerald-300">WHY CHOOSE US</span>
+            <div className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full text-sm font-bold mb-4 border border-indigo-400/30">
+              <Award className="w-4 h-4 text-amber-400" />
+              <span className="text-indigo-300">WHY CHOOSE US</span>
             </div>
             <h2 className="text-5xl font-black text-white mb-4">
-              Built for <span className="gradient-text">Tomorrow</span>
+              Built for <span className="gradient-text">Excellence</span>
             </h2>
             <p className="text-xl text-slate-400 max-w-2xl mx-auto">
               Experience the future of tax and compliance services today
@@ -211,10 +211,10 @@ const Home = () => {
               return (
                 <div 
                   key={item.id} 
-                  className="glass-card p-8 rounded-3xl hover:bg-white/10 transition-all duration-500 group backdrop-blur-xl border border-white/10"
+                  className="glass-card p-8 rounded-3xl hover:bg-white/10 transition-all duration-500 group backdrop-blur-xl border border-indigo-400/20"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
-                  <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/50 group-hover:shadow-emerald-500/70 group-hover:scale-110 transition-all">
+                  <div className="w-14 h-14 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-indigo-500/50 group-hover:shadow-indigo-500/70 group-hover:scale-110 transition-all">
                     <Icon className="w-7 h-7 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
@@ -226,11 +226,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials - Glassmorphism Style */}
+      {/* Testimonials - Elegant Style */}
       <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+            <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-amber-100 to-orange-100 text-amber-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
               <Star className="w-4 h-4" />
               <span>CLIENT STORIES</span>
             </div>
@@ -245,19 +245,19 @@ const Home = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center space-x-1 mb-6">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
                   <p className="text-lg text-slate-700 mb-6 leading-relaxed italic">
                     "{testimonial.text}"
                   </p>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
                       {testimonial.name.charAt(0)}
                     </div>
                     <div>
                       <p className="font-bold text-slate-900 text-lg">{testimonial.name}</p>
-                      <p className="text-emerald-600 font-medium">{testimonial.company}</p>
+                      <p className="text-indigo-600 font-medium">{testimonial.company}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -267,22 +267,22 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section - Futuristic */}
-      <section className="py-24 px-4 bg-gradient-to-br from-emerald-600 via-emerald-700 to-cyan-700 relative overflow-hidden">
+      {/* CTA Section - Elegant */}
+      <section className="py-24 px-4 bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-700 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl opacity-10 animate-float"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400 rounded-full blur-3xl opacity-10 animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-400 rounded-full blur-3xl opacity-10 animate-float" style={{animationDelay: '2s'}}></div>
         
         <div className="container mx-auto text-center relative z-10">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
               Ready to Transform Your Business Compliance?
             </h2>
-            <p className="text-xl text-emerald-50 mb-10 leading-relaxed">
+            <p className="text-xl text-indigo-50 mb-10 leading-relaxed">
               Join 500+ forward-thinking businesses leveraging our expertise for seamless tax management
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Link to="/contact">
-                <Button size="lg" className="bg-white text-emerald-600 hover:bg-slate-50 px-10 h-14 text-lg font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all">
+                <Button size="lg" className="bg-white text-indigo-600 hover:bg-slate-50 px-10 h-14 text-lg font-bold rounded-2xl shadow-2xl hover:shadow-3xl transition-all">
                   <Zap className="mr-2 w-5 h-5" />
                   Start Now
                 </Button>

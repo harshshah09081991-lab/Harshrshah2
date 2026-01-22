@@ -1,5 +1,5 @@
 export const businessInfo = {
-  name: "Harsh R Shah & Associates",
+  name: "Harsh R Shah & Associates, Chartered Accountants",
   tagline: "Expert Tax & Compliance Solutions for Growing Businesses",
   phone: "+91-9510960227",
   email: "contact@harshshah.ca",

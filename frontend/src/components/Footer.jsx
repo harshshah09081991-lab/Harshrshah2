@@ -28,12 +28,8 @@ const Footer = () => {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">{businessInfo.name}</h3>
             <p className="text-sm mb-4">
-              Providing expert tax and compliance solutions for over {businessInfo.experience} years. ICAI certified professionals committed to your business success.
+              Providing expert tax and compliance solutions for over {businessInfo.experience} years. Chartered Accountant committed to your business success.
             </p>
-            <div className="flex items-center space-x-2 text-sm">
-              <span className="font-semibold text-emerald-400">ICAI Member:</span>
-              <span>{businessInfo.icaiNumber}</span>
-            </div>
           </div>
 
           {/* Quick Links */}

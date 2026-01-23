@@ -106,8 +106,8 @@ code {
 
 /* Profile Image Zoom - Hide Gemini Logo */
 .profile-image-zoom {
-    transform: scale(1.15);
-    transform-origin: center center;
+    transform: scale(1.12);
+    transform-origin: center 45%;
 }
 
 .profile-image-container {

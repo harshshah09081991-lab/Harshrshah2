@@ -279,7 +279,7 @@ const Home = () => {
               Ready to Transform Your Business Compliance?
             </h2>
             <p className="text-xl text-indigo-50 mb-10 leading-relaxed">
-              Join 500+ forward-thinking businesses leveraging our expertise for seamless tax management
+              Join 1000+ forward-thinking businesses leveraging our expertise for seamless tax management
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Link to="/contact">

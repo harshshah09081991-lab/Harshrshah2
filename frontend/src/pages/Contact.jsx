@@ -39,18 +39,20 @@ const Contact = () => {
       return;
     }
 
-    // Mock submission - in production, this would connect to backend
-    console.log('Form submitted:', formData);
+    // Netlify Forms handles the submission automatically
+    // Show success message
     toast.success('Message sent successfully! We will get back to you soon.');
     
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
+    // Reset form after submission
+    setTimeout(() => {
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    }, 1000);
   };
 
   return (
@@ -135,7 +137,14 @@ const Contact = () => {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Send us a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                {/* Netlify Forms - Hidden fields */}
+                <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
+                  <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                  </label>
+                </p>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
                     Full Name *

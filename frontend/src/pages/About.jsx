@@ -28,7 +28,7 @@ const About = () => {
   ];
 
   const achievements = [
-    { number: '500+', label: 'Clients Served', icon: Users },
+    { number: '1000+', label: 'Clients Served', icon: Users },
     { number: '12+', label: 'Years Experience', icon: Briefcase },
     { number: '100%', label: 'Compliance Rate', icon: Target },
     { number: '24/7', label: 'Support', icon: Zap }

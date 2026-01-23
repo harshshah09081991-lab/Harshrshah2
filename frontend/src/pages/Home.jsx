@@ -21,22 +21,24 @@ const Home = () => {
         <div className="absolute top-1/2 left-1/2 w-[400px] h-[400px] bg-violet-400 rounded-full opacity-5 blur-3xl animate-float" style={{animationDelay: '4s'}}></div>
         
         <div className="container mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="text-white animate-slide-in-up">
+          <div className="grid lg:grid-cols-3 gap-12 items-center">
+            {/* Left Content - Takes 2 columns */}
+            <div className="text-white animate-slide-in-up lg:col-span-2">
               <div className="inline-flex items-center space-x-2 glass px-5 py-2.5 rounded-full text-sm font-semibold mb-8 animate-glow border border-indigo-400/30">
                 <Sparkles className="w-4 h-4 text-amber-400" />
                 <span className="text-indigo-300">{businessInfo.experience}+ Years of Excellence</span>
               </div>
               
               <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                Next-Gen
+                Professional
                 <br />
-                <span className="gradient-text">Tax Solutions</span>
+                <span className="gradient-text">Tax & Compliance</span>
+                <br />
+                Solutions
               </h1>
               
-              <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-xl">
-                Empowering businesses with cutting-edge compliance strategies and intelligent tax optimization. Based in Ahmedabad, serving visionaries across India.
+              <p className="text-xl text-slate-300 mb-8 leading-relaxed max-w-3xl">
+                Comprehensive GST, Income Tax, Audit & USA Bookkeeping services with QuickBooks expertise. Serving individuals, startups, and established businesses across India and USA with commitment to accuracy, ethics, and timely compliance.
               </p>
               
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-10">
@@ -54,71 +56,70 @@ const Home = () => {
                 </a>
               </div>
               
-              <div className="flex flex-wrap items-center gap-6 text-sm text-slate-400">
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
-                  <span>Premium Service</span>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div className="text-center">
+                  <div className="text-4xl font-black text-white mb-2">{businessInfo.experience}+</div>
+                  <div className="text-sm text-slate-400 font-medium">Years Experience</div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                  <span>100% Compliance</span>
+                <div className="text-center">
+                  <div className="text-4xl font-black text-white mb-2">1000+</div>
+                  <div className="text-sm text-slate-400 font-medium">Happy Clients</div>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-violet-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-                  <span>24/7 Support</span>
+                <div className="text-center">
+                  <div className="text-4xl font-black text-white mb-2">100%</div>
+                  <div className="text-sm text-slate-400 font-medium">Compliance Rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-black text-white mb-2">24/7</div>
+                  <div className="text-sm text-slate-400 font-medium">Support</div>
                 </div>
               </div>
             </div>
 
-            {/* Right - Profile Photo with Elegant Frame */}
+            {/* Right - Key Highlights - Takes 1 column */}
             <div className="relative animate-slide-in-up" style={{animationDelay: '0.2s'}}>
-              <div className="relative">
-                {/* Glow Effects */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-indigo-500 to-violet-500 rounded-[3rem] opacity-20 blur-2xl animate-pulse"></div>
-                
-                {/* Photo Container - Clean without overlay */}
-                <div className="relative glass-card rounded-[3rem] p-2 backdrop-blur-2xl mb-6 border border-indigo-400/20">
-                  <div className="relative rounded-[2.5rem] overflow-hidden profile-image-container">
-                    <img 
-                      src={businessInfo.profileImage} 
-                      alt={businessInfo.founderName}
-                      className="w-full h-auto object-cover profile-image-zoom"
-                    />
-                  </div>
-                </div>
-
-                {/* Profile Info Badge - Below Photo */}
-                <div className="glass-card rounded-2xl p-6 backdrop-blur-xl border border-indigo-400/30 mb-6 bg-gradient-to-br from-indigo-900/20 to-violet-900/20">
-                  <h3 className="text-2xl font-bold text-white mb-1">{businessInfo.founderName}</h3>
-                  <p className="text-amber-300 font-semibold text-lg mb-2">{businessInfo.qualification}</p>
-                  <p className="text-slate-300 text-sm leading-relaxed">
-                    {businessInfo.experience}+ years of transforming businesses through strategic tax advisory
-                  </p>
-                </div>
-
-                {/* Stats Grid - Below Profile Info */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-indigo-400/30 bg-gradient-to-br from-indigo-900/20 to-violet-900/20">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/50">
-                        <Users className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <div className="text-2xl font-bold text-white">500+</div>
-                        <div className="text-xs text-slate-300">Clients</div>
-                      </div>
+              <div className="space-y-6">
+                {/* Expertise Card */}
+                <div className="glass-card rounded-3xl p-6 backdrop-blur-xl border border-indigo-400/30 bg-gradient-to-br from-indigo-900/20 to-violet-900/20 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                      <Award className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-white mb-2">Certified Expertise</h3>
+                      <p className="text-slate-300 text-sm leading-relaxed">
+                        Chartered Accountant with deep knowledge of Indian tax laws, GST compliance, and international bookkeeping
+                      </p>
                     </div>
                   </div>
+                </div>
 
-                  <div className="glass-card rounded-2xl p-4 backdrop-blur-xl border border-amber-400/30 bg-gradient-to-br from-amber-900/20 to-orange-900/20">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg shadow-amber-500/50">
-                        <Award className="w-6 h-6 text-white" />
-                      </div>
-                      <div>
-                        <div className="text-2xl font-bold text-white">100%</div>
-                        <div className="text-xs text-slate-300">Success</div>
-                      </div>
+                {/* GST Specialist Card */}
+                <div className="glass-card rounded-3xl p-6 backdrop-blur-xl border border-amber-400/30 bg-gradient-to-br from-amber-900/20 to-orange-900/20 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                      <FileText className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-white mb-2">GST Specialist</h3>
+                      <p className="text-slate-300 text-sm leading-relaxed">
+                        Expert in GST registrations, returns, refunds, appeals & litigation with proven track record
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* USA Bookkeeping Card */}
+                <div className="glass-card rounded-3xl p-6 backdrop-blur-xl border border-indigo-400/30 bg-gradient-to-br from-indigo-900/20 to-violet-900/20 hover:scale-105 transition-transform duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-violet-600 rounded-xl flex items-center justify-center shadow-lg flex-shrink-0">
+                      <TrendingUp className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-bold text-white mb-2">USA Bookkeeping</h3>
+                      <p className="text-slate-300 text-sm leading-relaxed">
+                        Hands-on QuickBooks expertise for US-based businesses with comprehensive accounting support
+                      </p>
                     </div>
                   </div>
                 </div>

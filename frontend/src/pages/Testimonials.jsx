@@ -66,7 +66,7 @@ const Testimonials = () => {
 
             <div className="bg-white p-6 rounded-xl text-center">
               <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-emerald-600">200+</span>
+                <span className="text-2xl font-bold text-emerald-600">1000+</span>
               </div>
               <h3 className="font-bold text-slate-900 mb-2">SMEs</h3>
               <p className="text-slate-600 text-sm">Managing ongoing tax and compliance for growing businesses</p>
